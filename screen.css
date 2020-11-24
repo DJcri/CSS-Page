@@ -17,10 +17,16 @@ img {
 .image-banner {
     position: relative;
     width: 183px;
+    overflow: hidden;
 }
 
 .image-banner img {
     display: block;
+    transition: all 1s ease-out;
+}
+
+.image-banner:hover img{
+    transform: scale(1.5);
 }
 
 /* Form Styles */
@@ -140,6 +146,15 @@ table td {
     color: #FFF;
     background-color: rgba(0, 0, 0, .65);
     padding: 0 12px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.image-banner:hover .banner-description {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .container {

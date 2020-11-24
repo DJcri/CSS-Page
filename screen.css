@@ -1,5 +1,6 @@
 html {
     background-color: #6c7854;
+    line-height: 1.7;
 }
 
 body {
@@ -26,7 +27,7 @@ img {
 form {
     background-color: #ECECEC;
     padding: 30px 40px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .hidden-label {
@@ -138,16 +139,16 @@ table td {
     left: 0;
     color: #FFF;
     background-color: rgba(0, 0, 0, .65);
-    padding: 15px 25px;
+    padding: 0 12px;
 }
 
 .container {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #FFF;
+    background: url(../images/color-tile.png) left bottom repeat-x, #FFF url(../images/color-tile.png) left top repeat-x;
     padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 15px;
     box-sizing: border-box;
 }
 
@@ -159,7 +160,54 @@ table td {
 header {
     padding-top: 20px;
     color: #6c7854;
+    background-image: url(../images/flower.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
 }
+
+.birds {
+    padding: 200px 0;
+    background: #c2bbb1 url(../images/bird.jpg) center center no-repeat;
+    text-align: center;
+}
+
+.birds p {
+    background-color: rgba(0, 0, 0, .65);
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    text-shadow: 1px 1px 0 #000;
+    display: inline-block;
+}
+
+/* UI Menu */
+.ui-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.ui-menu li {
+    list-style: none;
+    margin-right: 20px;
+    float: left;
+}
+
+.ui-menu a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    text-indent: 9999px;
+}
+
+.ui-home a:hover {background-position: 50px 0;}
+
+.ui-profile a {background-position: 0 50px;}
+.ui-profile a:hover {background-position: 50px 50px;}
+
+.ui-settings a {background-position: 0 100px;}
+.ui-settings a:hover {background-position: 50px 100px;}
 
 /* Site Navigation */
 .site-nav {
@@ -212,6 +260,18 @@ header p {
     width: 34%;
     float: left;
     background-color: #e3f2cb;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#e3f2cb),
+      to(#fff)
+    );
+    background-image: -webkit-linear-gradient(top, #e3f2cb, #fff);
+    background-image: -moz-linear-gradient(top, #e3f2cb, #fff);
+    background-image: -ms-linear-gradient(top, #e3f2cb, #fff);
+    background-image: -o-linear-gradient(top, #e3f2cb, #fff);
+    background-image: linear-gradient(to bottom, #e3f2cb, #fff);
     padding: 20px 40px;
     box-sizing: border-box;
     font-size: 85%;
